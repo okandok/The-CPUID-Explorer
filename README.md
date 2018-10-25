@@ -22,7 +22,7 @@ This code and the essays are primarily provided as a form of teaching materials,
 ##### 说明
 升级工程到VS2008，项目使用了MFC。
 
-[Bin][./mvp_tips/CPUID/CPUID/Release/CPUID.exe]
+[二进制文件下载BinFile](./mvp_tips/CPUID/CPUID/Release/CPUID.exe)
 
 ##### snatshot
 
