@@ -38,7 +38,7 @@ protected:
     virtual void OnCancel();
     virtual void OnOK();
     afx_msg void OnClose();
-    afx_msg UINT OnNcHitTest(CPoint point);
+    afx_msg LRESULT OnNcHitTest(CPoint point);
     afx_msg void OnSize(UINT nType, int cx, int cy);
     afx_msg void OnBnClickedCPU(UINT id);
     afx_msg void OnInitMenuPopup(CMenu* pPopupMenu, UINT nIndex, BOOL bSysMenu);

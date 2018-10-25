@@ -18,3 +18,18 @@ I do not believe in the GNU Public License (GPL, the "copyleft"); I do not think
 
 This code and the essays are primarily provided as a form of teaching materials, to be studied for techniques and methodologies, philosophies of software design and construction, and as discussions to provoke thought.  If you find the code useful, that's cool, too.
 ```
+
+##### 说明
+升级工程到VS2008，项目使用了MFC。
+
+[Bin][./mvp_tips/CPUID/CPUID/Release/CPUID.exe]
+
+##### snatshot
+
+![snatshot1](snatshot1.png)
+
+![snatshot2](snatshot2.png)
+
+
+
+

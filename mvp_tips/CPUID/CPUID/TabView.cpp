@@ -367,7 +367,7 @@ INT_PTR CTabView::GetPageCount ()                                   // REQ #001
 *       TRUE if successful
 *       FALSE in index out of range
 * Effect: 
-*       ¶
+*       ?
 ****************************************************************************/
 
 BOOL CTabView::GetPageTitle (INT_PTR nIndex, CString &strTitle)     // REQ #001
@@ -915,7 +915,7 @@ INT_PTR CTabView::GetIndex(CWnd * wnd)                              // REQ #001
 *       HTLEFT
 ****************************************************************************/
 
-UINT CTabView::OnNcHitTest(CPoint point) 
+LRESULT CTabView::OnNcHitTest(CPoint point) 
    {
     UINT result = CTabCtrl::OnNcHitTest(point);
     CRect r;

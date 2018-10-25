@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug Static|Win32">
+      <Configuration>Debug Static</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Static|Win32">
+      <Configuration>Release Static</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{064F12B1-3197-49FF-9F6B-D24B24CC841F}</ProjectGuid>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Static|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Static|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Static|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Static|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug Static|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug Static|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug Static|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release Static|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release Static|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release Static|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug Static|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug Static|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug Static|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release Static|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release Static|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release Static|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Static|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Static|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Arrow.cpp" />
+    <ClCompile Include="BasicCPU0.cpp" />
+    <ClCompile Include="BasicCPU10Regs.cpp" />
+    <ClCompile Include="BasicCPU1EAX.cpp" />
+    <ClCompile Include="BasicCPU1EAXAMD.cpp" />
+    <ClCompile Include="BasicCPU1EAXIntel.cpp" />
+    <ClCompile Include="BasicCPU1EBX.cpp" />
+    <ClCompile Include="BasicCPU1ECX.cpp" />
+    <ClCompile Include="BasicCPU1ECXAMD.cpp" />
+    <ClCompile Include="BasicCPU1ECXIntel.cpp" />
+    <ClCompile Include="BasicCPU1EDX.cpp" />
+    <ClCompile Include="BasicCPU1EDXAMD.cpp" />
+    <ClCompile Include="BasicCPU1EDXCaptions.cpp" />
+    <ClCompile Include="BasicCPU1EDXCaptionsAMD.cpp" />
+    <ClCompile Include="BasicCPU1EDXCaptionsIntel.cpp" />
+    <ClCompile Include="BasicCPU1EDXIntel.cpp" />
+    <ClCompile Include="BasicCPU2Regs.cpp" />
+    <ClCompile Include="BasicCPU3Regs.cpp" />
+    <ClCompile Include="BasicCPU4_0.cpp" />
+    <ClCompile Include="BasicCPU4_0_31.cpp" />
+    <ClCompile Include="BasicCPU4_1.cpp" />
+    <ClCompile Include="BasicCPU4_2.cpp" />
+    <ClCompile Include="BasicCPU4_3.cpp" />
+    <ClCompile Include="BasicCPU4_4.cpp" />
+    <ClCompile Include="BasicCPU4_5.cpp" />
+    <ClCompile Include="BasicCPU4_6.cpp" />
+    <ClCompile Include="BasicCPU5Regs.cpp" />
+    <ClCompile Include="BasicCPU6Regs.cpp" />
+    <ClCompile Include="BasicCPU7Regs.cpp" />
+    <ClCompile Include="BasicCPU8Regs.cpp" />
+    <ClCompile Include="BasicCPU9Regs.cpp" />
+    <ClCompile Include="Bits.cpp" />
+    <ClCompile Include="Block.cpp" />
+    <ClCompile Include="BlockDiagram.cpp" />
+    <ClCompile Include="CacheTLBInfo.cpp" />
+    <ClCompile Include="ColorSet.cpp" />
+    <ClCompile Include="CPUCoreRegion.cpp" />
+    <ClCompile Include="CPUID.cpp" />
+    <ClCompile Include="CPUIDDlg.cpp" />
+    <ClCompile Include="CPUIDx86.cpp" />
+    <ClCompile Include="CPUType.cpp" />
+    <ClCompile Include="CurrentProcessor.cpp" />
+    <ClCompile Include="ErrorString.cpp" />
+    <ClCompile Include="ExtendedCPU0.cpp" />
+    <ClCompile Include="ExtendedCPU10AMD.cpp" />
+    <ClCompile Include="ExtendedCPU1EAXAMD.cpp" />
+    <ClCompile Include="ExtendedCPU1EBXAMD.cpp" />
+    <ClCompile Include="ExtendedCPU1ECXAMD.cpp" />
+    <ClCompile Include="ExtendedCPU1EDXAMD.cpp" />
+    <ClCompile Include="ExtendedCPU1EDXCaptionsAMD.cpp" />
+    <ClCompile Include="ExtendedCPU1Intel.cpp" />
+    <ClCompile Include="ExtendedCPU2.cpp" />
+    <ClCompile Include="ExtendedCPU24.cpp" />
+    <ClCompile Include="ExtendedCPU3.cpp" />
+    <ClCompile Include="ExtendedCPU4.cpp" />
+    <ClCompile Include="ExtendedCPU5AMD.cpp" />
+    <ClCompile Include="ExtendedCPU5EAXAMD.cpp" />
+    <ClCompile Include="ExtendedCPU5EBXAMD.cpp" />
+    <ClCompile Include="ExtendedCPU5ECXAMD.cpp" />
+    <ClCompile Include="ExtendedCPU5EDXAMD.cpp" />
+    <ClCompile Include="ExtendedCPU5Intel.cpp" />
+    <ClCompile Include="ExtendedCPU6AMD.cpp" />
+    <ClCompile Include="ExtendedCPU6EAXAMD.cpp" />
+    <ClCompile Include="ExtendedCPU6EBXAMD.cpp" />
+    <ClCompile Include="ExtendedCPU6ECXAMD.cpp" />
+    <ClCompile Include="ExtendedCPU6Intel.cpp" />
+    <ClCompile Include="ExtendedCPU7AMD.cpp" />
+    <ClCompile Include="ExtendedCPU7Intel.cpp" />
+    <ClCompile Include="ExtendedCPU8.cpp" />
+    <ClCompile Include="ExtendedCPU8AMD.cpp" />
+    <ClCompile Include="ExtendedCPU8Intel.cpp" />
+    <ClCompile Include="FormatBinary.cpp" />
+    <ClCompile Include="FormatMagnitude.cpp" />
+    <ClCompile Include="FormatWithCommas.cpp" />
+    <ClCompile Include="GetCPUName.cpp" />
+    <ClCompile Include="InfoDisplay.cpp" />
+    <ClCompile Include="Leaves.cpp" />
+    <ClCompile Include="LogicalAddressLines.cpp" />
+    <ClCompile Include="PhysicalAddressLines.cpp" />
+    <ClCompile Include="ReadSpecs.cpp" />
+    <ClCompile Include="ScrollableCaptions.cpp" />
+    <ClCompile Include="ScrollableCaptionsParent.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug Static|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release Static|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TabView.cpp" />
+    <ClCompile Include="ToClip.cpp" />
+    <ClCompile Include="WriteSpecs.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Arrow.h" />
+    <ClInclude Include="Basic2Regs.h" />
+    <ClInclude Include="BasicCPU0.h" />
+    <ClInclude Include="BasicCPU10Regs.h" />
+    <ClInclude Include="BasicCPU1EAX.h" />
+    <ClInclude Include="BasicCPU1EAXAMD.h" />
+    <ClInclude Include="BasicCPU1EAXIntel.h" />
+    <ClInclude Include="BasicCPU1EBX.h" />
+    <ClInclude Include="BasicCPU1ECX.h" />
+    <ClInclude Include="BasicCPU1ECXAMD.h" />
+    <ClInclude Include="BasicCPU1ECXIntel.h" />
+    <ClInclude Include="BasicCPU1EDX.h" />
+    <ClInclude Include="BasicCPU1EDXAMD.h" />
+    <ClInclude Include="BasicCPU1EDXCaptions.h" />
+    <ClInclude Include="BasicCPU1EDXCaptionsAMD.h" />
+    <ClInclude Include="BasicCPU1EDXCaptionsIntel.h" />
+    <ClInclude Include="BasicCPU1EDXIntel.h" />
+    <ClInclude Include="BasicCPU2Regs.h" />
+    <ClInclude Include="BasicCPU3Regs.h" />
+    <ClInclude Include="BasicCPU4_0.h" />
+    <ClInclude Include="BasicCPU4_0_31.h" />
+    <ClInclude Include="BasicCPU4_1.h" />
+    <ClInclude Include="BasicCPU4_2.h" />
+    <ClInclude Include="BasicCPU4_3.h" />
+    <ClInclude Include="BasicCPU4_4.h" />
+    <ClInclude Include="BasicCPU4_5.h" />
+    <ClInclude Include="BasicCPU4_6.h" />
+    <ClInclude Include="BasicCPU5Regs.h" />
+    <ClInclude Include="BasicCPU6Regs.h" />
+    <ClInclude Include="BasicCPU7Regs.h" />
+    <ClInclude Include="BasicCPU8Regs.h" />
+    <ClInclude Include="BasicCPU9Regs.h" />
+    <ClInclude Include="Bits.h" />
+    <ClInclude Include="Block.h" />
+    <ClInclude Include="BlockDiagram.h" />
+    <ClInclude Include="CacheTLBInfo.h" />
+    <ClInclude Include="Colors.h" />
+    <ClInclude Include="ColorSet.h" />
+    <ClInclude Include="CPUCoreRegion.h" />
+    <ClInclude Include="CPUID.h" />
+    <ClInclude Include="CPUIDBasic1Captions.h" />
+    <ClInclude Include="CPUIDDlg.h" />
+    <ClInclude Include="CPUIDRegs.h" />
+    <ClInclude Include="CPUIDx86.h" />
+    <ClInclude Include="CPUType.h" />
+    <ClInclude Include="CurrentProcessor.h" />
+    <ClInclude Include="ErrorString.h" />
+    <ClInclude Include="ExtendedCPU0.h" />
+    <ClInclude Include="ExtendedCPU10AMD.h" />
+    <ClInclude Include="ExtendedCPU1AMD.h" />
+    <ClInclude Include="ExtendedCPU1EAXAMD.h" />
+    <ClInclude Include="ExtendedCPU1EBXAMD.h" />
+    <ClInclude Include="ExtendedCPU1ECXAMD.h" />
+    <ClInclude Include="ExtendedCPU1EDXAMD.h" />
+    <ClInclude Include="ExtendedCPU1EDXCaptionsAMD.h" />
+    <ClInclude Include="ExtendedCPU1Intel.h" />
+    <ClInclude Include="ExtendedCPU2.h" />
+    <ClInclude Include="ExtendedCPU24.h" />
+    <ClInclude Include="ExtendedCPU3.h" />
+    <ClInclude Include="ExtendedCPU4.h" />
+    <ClInclude Include="ExtendedCPU5.h" />
+    <ClInclude Include="ExtendedCPU5AMD.h" />
+    <ClInclude Include="ExtendedCPU5EAXAMD.h" />
+    <ClInclude Include="ExtendedCPU5EBXAMD.h" />
+    <ClInclude Include="ExtendedCPU5ECXAMD.h" />
+    <ClInclude Include="ExtendedCPU5EDXAMD.h" />
+    <ClInclude Include="ExtendedCPU5Intel.h" />
+    <ClInclude Include="ExtendedCPU6AMD.h" />
+    <ClInclude Include="ExtendedCPU6EAXAMD.h" />
+    <ClInclude Include="ExtendedCPU6EBXAMD.h" />
+    <ClInclude Include="ExtendedCPU6ECXAMD.h" />
+    <ClInclude Include="ExtendedCPU6Intel.h" />
+    <ClInclude Include="ExtendedCPU7AMD.h" />
+    <ClInclude Include="ExtendedCPU7Intel.h" />
+    <ClInclude Include="ExtendedCPU8.h" />
+    <ClInclude Include="ExtendedCPU8AMD.h" />
+    <ClInclude Include="ExtendedCPU8Intel.h" />
+    <ClInclude Include="FormatBinary.h" />
+    <ClInclude Include="FormatMagnitude.h" />
+    <ClInclude Include="FormatWithCommas.h" />
+    <ClInclude Include="GetCPUName.h" />
+    <ClInclude Include="Leaves.h" />
+    <ClInclude Include="LogicalAddressLines.h" />
+    <ClInclude Include="messagesToChildren.h" />
+    <ClInclude Include="msg.h" />
+    <ClInclude Include="PhysicalAddressLines.h" />
+    <ClInclude Include="QueryCoordinates.h" />
+    <ClInclude Include="ReadSpecs.h" />
+    <ClInclude Include="ReportRegs.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ScrollableCaptions.h" />
+    <ClInclude Include="ScrollableCaptionsParent.h" />
+    <ClInclude Include="SetAlign.h" />
+    <ClInclude Include="SetColor.h" />
+    <ClInclude Include="SetWindowBit.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="TabView.h" />
+    <ClInclude Include="ToClip.h" />
+    <ClInclude Include="WriteSpecs.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Copy.bmp" />
+    <None Include="res\CPUID.ico" />
+    <None Include="res\CPUID.rc2" />
+    <None Include="res\jmn.ico" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CPUID.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="res\CPUID.manifest" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="CPUID.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

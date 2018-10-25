@@ -689,11 +689,11 @@ void CCPUIDDlg::AddAllPages()
 /****************************************************************************
 *                          CCPUIDDlg::EnableAffinity
 * Inputs:
-*       ¶
-* Result: ¶
-*       ¶
+*       ?
+* Result: ?
+*       ?
 * Effect: 
-*       ¶
+*       ?
 ****************************************************************************/
 
 void CCPUIDDlg::EnableAffinity()
@@ -995,14 +995,14 @@ void CCPUIDDlg::OnClose()
 /****************************************************************************
 *                           CCPUIDDlg::OnNcHitTest
 * Inputs:
-*       ¶
+*       ?
 * Result: UINT
 *       Test result (HT???? value)
 * Effect: 
 *       Forces left-and-right resizing events to be ignored
 ****************************************************************************/
 
-UINT CCPUIDDlg::OnNcHitTest(CPoint point)
+LRESULT CCPUIDDlg::OnNcHitTest(CPoint point)
     {
      UINT hit = CDialog::OnNcHitTest(point);
 

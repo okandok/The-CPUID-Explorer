@@ -110,7 +110,7 @@ class CTabView : public /* CCtrlView */ CTabCtrl
        afx_msg void OnDestroy ();
        afx_msg void OnSetFocus (CWnd* pOldWnd);
        afx_msg void OnKillFocus (CWnd* pNewWnd);
-       afx_msg UINT OnNcHitTest(CPoint point);
+       afx_msg LRESULT OnNcHitTest(CPoint point);
        afx_msg BOOL OnSetCursor(CWnd* pWnd, UINT nHitTest, UINT message);
        afx_msg void OnGetMinMaxInfo(MINMAXINFO FAR* lpMMI);
         //}}AFX_MSG

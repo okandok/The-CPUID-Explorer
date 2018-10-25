@@ -337,13 +337,13 @@ void CBlockDiagram::ComputeCacheTLBInformation(CCacheTLBInfo & region, const BYT
 *       TRUE if successful
 *       FALSE if error
 * Effect: 
-*       ¶
+*       ?
 ****************************************************************************/
 
 BOOL CBlockDiagram::FormatExtendedTLBInfo(UINT assoc, UINT count, CString & shortDesc, UINT shortFmt, CString & longDesc, UINT longFmt)
     {
      CString fmt;
-     fmt.LoadString(shortFmt); // [I|D] 2M+4M×%s×%d
+     fmt.LoadString(shortFmt); // [I|D] 2M+4M?s?d
      
      CString way;
 
@@ -375,7 +375,7 @@ BOOL CBlockDiagram::FormatExtendedTLBInfo(UINT assoc, UINT count, CString & shor
 *               |D 2M ass|D 2M cnt|I 2M ass|I 2M cnt|
 *               +--------+--------+--------+--------+
 *                       |   |             |  |   
-*               D 2M+4M×%dw×%d    I 2M+4M×%d×%d
+*               D 2M+4M?dw?d    I 2M+4M?d?d
 *               IDS_FMT_SHORT_2M_TLBD      IDS_FMT_SHORT_2M_TLBI
 *
 *               IDS_FMT_LONG_2M_TLBD: Data TLB, 2M+4M  pages, %s associative, %d entries
@@ -385,7 +385,7 @@ BOOL CBlockDiagram::FormatExtendedTLBInfo(UINT assoc, UINT count, CString & shor
 *               |D 4K ass|D 4K cnt|I 4K ass|I 4K cnt|
 *               +--------+--------+--------+--------+
 *                      |   |              |  |   
-*                D 4K×%dw×%d     I 2M+4M×%d×%d
+*                D 4K?dw?d     I 2M+4M?d?d
 *               IDS_FMT_SHORT_4K_TLBD      IDS_FMT_SHORT_4K_TLBI
 *               IDS_FMT_LONG_4K_TLBD: Data TLB, 4K pages, %s associative, %d entries
 *               IDS_FMT_LONG_4K_TLBI: Instruction TLB, 4K pages, %s associative, %d entries
@@ -456,9 +456,9 @@ void CBlockDiagram::ComputeExtendedTLBInformation(CCacheTLBInfo & region)
 BOOL CBlockDiagram::FormatL1CacheInfo(UINT CacheSize, UINT Associativity, UINT LinesPerTag, UINT LineSize, CString & LongDesc, UINT LongFmt, CString & ShortDesc, UINT ShortFmt )
     {
      // 1st level data cache, %dK, %s, %d byte line size
-     // D %dK×%s×%D
+     // D %dK?s?D
      // 1st level instruction cache, %dK, %s, %d byte line size
-     // I %dK×%s×%D
+     // I %dK?s?D
      CString assoc;
      if(!GetShortAssociativity(Associativity, assoc))
         return FALSE;
@@ -572,7 +572,7 @@ BOOL CBlockDiagram::GetShortL2Associativity(UINT assoc, CString & way)
 *       TRUE if successful
 *       FALSE if no cache info
 * Effect: 
-*       ¶
+*       ?
 ****************************************************************************/
 
 BOOL CBlockDiagram::FormatL2CacheInfo(UINT CacheSize, UINT Associativity, UINT LinesPerTag, UINT LineSize, CString & LongDesc, UINT LongFmt, CString & ShortDesc, UINT ShortFmt)
@@ -583,7 +583,7 @@ BOOL CBlockDiagram::FormatL2CacheInfo(UINT CacheSize, UINT Associativity, UINT L
         return FALSE;
 
      CString fmt;
-     fmt.LoadString(ShortFmt); // %dK×%s×%d
+     fmt.LoadString(ShortFmt); // %dK?s?d
      
      ShortDesc.Format(fmt, CacheSize, assoc, LineSize);
 
@@ -649,7 +649,7 @@ void CBlockDiagram::ComputePrefetchInformation()
          
          for(int i = 0; i < descriptors.GetSize(); i++)
             { /* scan it */
-             LPSTR p = strchr((LPCSTR)PrefetchInfo, descriptors[i]);
+             LPSTR p = strchr((char*)PrefetchInfo, descriptors[i]);
              if(p != NULL)
                 { /* got it */
                 // String is extended to be "NNN-byte prefetching"
